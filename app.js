@@ -5,6 +5,9 @@ const app = express();
 
 const index = require('./routes/index');
 // const part_tickets = require('./routes/part-tickets');
+const tickets = require('./routes/tickets');
+const kmpreis = require('./routes/kmpreis');
+const fahrt = require('./routes/fahrt');
 
 
 // Generic application setup
@@ -14,6 +17,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 // Routes
 app.use('/', index);
+app.use('/tickets', tickets);
+app.use('/kmpreis', kmpreis);
+app.use('/fahrt', fahrt);
 
 // for (let linie of ['Gelbe-Linie', 'Blaue-Linie', 'Rote-Linie', 'Orange-Linie']) {
 //   app.use('/linientickets/'+linie, part_tickets(linie));
