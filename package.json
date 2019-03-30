@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node %NODE_DEBUG_OPTION% ./bin/www",
-    "monitor": "nodemon %NODE_DEBUG_OPTION% ./bin/www"
+    "start": "node ./bin/www",
+    "monitor": "nodemon ./bin/www"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
